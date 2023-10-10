@@ -1,0 +1,12 @@
+Sobre os Cores Modules - São ferramentas integradas nativamente do nodeJS 
+
+Fundamentais
+
+Http -> módulo para criar servidores HTTP 
+
+path -> extrair informações de paths (caminhos) de arquivos 
+
+fs -> file system, leitura e escrita de arquivos 
+
+url -> módulo para trabalhar com urls 
+
