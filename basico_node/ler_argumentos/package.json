@@ -1,0 +1,14 @@
+{
+  "name": "ler-args",
+  "version": "1.0.0",
+  "description": "Praticando recebimento e leitura de argumentos pela linha de comando",
+  "type": "module",
+  "main": "index.js",
+  "author": {
+    "name": "Giulyano Santos"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.8"
+  }
+}
