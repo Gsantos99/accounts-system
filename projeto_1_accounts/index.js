@@ -48,7 +48,6 @@ function welcomeMsg() {
   console.log(chalk.green('Defina as opções da sua conta a seguir'))
 }
 
-// Build account
 function buildAccount() {
   inquirer
     .prompt([
@@ -87,7 +86,6 @@ function buildAccount() {
     })
 }
 
-// Depositar
 function deposit() {
   inquirer
     .prompt([
@@ -121,7 +119,6 @@ function deposit() {
     .catch(e => console.log(e))
 }
 
-// Verifica se a conta existe!
 function check_account(account_name) {
   // Checa se a conta existe
   if (!fs.existsSync(`accounts/${account_name}.json`)) {
@@ -131,7 +128,6 @@ function check_account(account_name) {
   return true
 }
 
-// Adicionar valor em uma conta
 function add_amount(account_name, amout) {
   const accountData = get_account(account_name)
 
@@ -155,7 +151,6 @@ function add_amount(account_name, amout) {
   console.log(chalk.green(`Foi depositado o valor de R$${amout} na sua conta`))
 }
 
-// Pega account no 'banco de dados'
 function get_account(account_name) {
   // Pego a conta (json) na pasta, simulando um banco de dados
   const accountJson = fs.readFileSync(`accounts/${account_name}.json`, {
@@ -167,7 +162,6 @@ function get_account(account_name) {
   return JSON.parse(accountJson)
 }
 
-// Pega saldo da conta 
 function get_account_balance(account_name) {
   inquirer
     .prompt([
